@@ -21,21 +21,30 @@
     <source src="baby.mp3" type="audio/mp3">
 </audio>
 <div id="main">
-    <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a
+    <div id="error">目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a
             href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。
     </div>
     <div id="wrap">
         <div id="text">
-            <div id="code"><font color="#FF0000"> <span class="say">Hello World </span><br>
-                <span class="say"> 我是即将(2019-09-14)来到世间的小宝宝，生出来就是个小公主呢 </span><br>
+            <div id="code"><span class="say" style="color: #faad14 ;font-size: 22px"> 初秋九月，成熟而喜悦 </span><br>
+                <span class="say" > 我的一声<span style="color: red;font-size: 22px">啼哭</span>，美妙而神奇 </span><br>
+                <span class="say"> 美妙的旋律，承载着<span style="color: red;font-size: 22px">麻麻</span>的<span style="color: #52c41a;font-size: 22px">辛苦</span>与<span style="color: #8628ff;font-size: 22px">汗水</span> </span><br>
+                <span class="say"> 神奇的和旋，附和着<span style="color: red;font-size: 22px">粑粑</span>的<span style="color: #3591ff;font-size: 22px">牵挂</span>与<span style="color: #52c41a;font-size: 22px">守护</span> </span><br>
+                <span class="say"> <span style="color: red;font-size: 22px">麻麻</span>说：这一声，<span style="color: #ff95fd;font-size: 22px">清脆、幸福</span> </span><br>
+                <span class="say"> <span style="color: red;font-size: 22px">粑粑</span>说：这一声，<span style="color: #8628ff;font-size: 22px">细腻、柔软</span> </span><br>
                 <span class="say"> </span><br>
-                <span class="say"> 听说麻麻费尽千辛万苦才把我带来人世间 </span><br>
-                <span class="say"> 我特别感谢粑粑麻麻</span><br>
+                <span class="say"> 我深切的<span style="color: #52c41a;font-size: 22px">感受</span>到了 </span><br>
+                <span class="say"> <span style="color: red;font-size: 22px">麻麻</span>的<span style="color: #52c41a;font-size: 22px">爱</span>，<span style="color: red;font-size:
+                22px">粑粑</span>的<span style="color: #52c41a;font-size: 22px">责任</span> </span><br>
+                <span class="say"> 我悄悄地许下一个心愿：</span><br>
+                <span class="say"> 爱我的人，我爱的人 </span><br>
+                <span class="say" style="color: #52c41a;font-size: 22px"> 健康 平安 幸福 快乐 </span><br>
                 <span class="say"> </span><br>
-                <span class="say">别看我长的小，小眼睛忽闪忽闪挺大的噢</span><br>
-                <span class="say">粑粑麻麻很努力的学习呢，一定会将我照顾的很好的噢</span><br>
-                <span class="say"> </span><br>
-                <span class="say"><span class="space"></span> -- 爱你的米优--</span> </font>
+                <span class="say"> 噢，<span style="color: red;font-size: 22px">官宣</span>一下 </span><br>
+                <span class="say"> 我是<span style="color: #05d0ff;font-size: 22px">2019年9月14</span>日降临的<span style="color: #ff95fd;font-size: 22px">小公主</span>呢 </span><br>
+                <span class="say"> 别看我长的小，小眼睛忽闪忽闪挺大的噢 </span><br>
+                <span class="say"> 嘿嘿，记得关注我哟 </span><br>
+                <span class="say"><span class="space"></span> -- 我是<span style="color: #064fff;font-size: 22px">小米优</span>--</span>
                 </p>
             </div>
         </div>
@@ -98,11 +107,11 @@
         var hold = 1;
 
         canvas.click(function (e) {
-            //通过点击事件播放音乐
-            var Media = document.getElementById("media");
-            Media.loop = true; //歌曲循环
-            //开始播放
-            Media.play();
+            // //通过点击事件播放音乐
+            // var Media = document.getElementById("media");
+            // Media.loop = true; //歌曲循环
+            // //开始播放
+            // Media.play();
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;
@@ -200,6 +209,11 @@
     function selfClick() {
         if (s == 1) {
             $('#canvas').click();
+            //通过点击事件播放音乐
+            var Media = document.getElementById("media");
+            Media.loop = true; //歌曲循环
+            //开始播放
+            Media.play();
         }
         s = 2
     }
